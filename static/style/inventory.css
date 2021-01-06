@@ -1,0 +1,186 @@
+:root{
+  --bordersize: 1px;
+}
+
+
+body{
+  font-family: sans-serif;
+  text-align: left;
+  color: #555;
+}
+
+
+
+.cakeAreaFull {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  grid-gap: 15px;
+  img{
+    margin: 30px;
+    transition: transform 0.2s 0.05s;
+  }
+  &:hover img{
+    transform: scale(1.3);
+    transition-delay: 0s;
+  }
+}
+
+#collapsebutton {
+}
+
+
+
+.cakeAreaHalf {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 15px;
+    img{
+      margin: 30px;
+      transition: transform 0.2s 0.05s;
+  }
+  &:hover img{
+    transform: scale(1.3);
+    transition-delay: 0s;
+  }
+}
+
+.collapse {
+  top:5%;
+  margin-left: 60%;
+  position: absolute;
+ border-style: solid;
+ border-color: black;
+}
+.mainDiv{
+  width: 100%;
+}
+
+.userguest
+{
+  display: inline-block;
+}
+
+.cartimagediv {
+  display: inline-block;
+  float: right;
+}
+.btn {
+    background:cyan;
+    height:30px;
+    width: fit-content;
+    color:blue;
+    border-radius:4px;
+    text-align: center;
+}
+.btn:hover {
+    background:#2CC06B;
+}
+
+.loginArea {
+	margin: auto;
+	width: 60%;
+	border: 5px solid #FFFF00;
+	padding: 10px;
+}
+
+.image {
+    width: 10%;
+    height: 20%;
+}
+
+div.cakeImagediv {
+  border-left: var(--bordersize) dashed #ccc;
+  border-bottom: var(--bordersize) dashed #ccc;
+  margin-left: calc(-1 * var(--bordersize));
+  margin-bottom: calc(-1 * var(--bordersize));
+  position: relative;
+}
+
+div.cakeImagediv:hover {
+  border: 1px solid #777;
+}
+
+div.cakeImagediv img {
+  width: 80%;
+  height: 200px;
+}
+
+
+.cartimage {
+  height: 5vw;
+  }
+
+.welcome {
+  display: block;
+    width: 100%;
+    height:8%;
+}
+
+
+.sidePanelClosed {
+  display: none;
+}
+.sidePanelOpen {
+  float : left;
+  width: 30%;
+  border: 3px solid #73AD21;
+}
+
+.orderMainDiv {
+    padding-top: 5%;
+}
+
+#pagetable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+#pagetable td, #pagetable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.logoutdiv {
+    padding-left: 90%;
+    padding-top: 2%;
+}
+.orderDeleteButton {
+    padding-left: 50%;
+}
+#pagetable tr:nth-child(even){background-color: #f2f2f2;}
+
+#pagetable tr:hover {background-color: #ddd;}
+
+#pagetable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.inventoryClassDiv {
+  margin: auto;
+  width: 30%;
+  border: 3px solid green;
+  padding: 10px;
+}
+.inventoryClassp {
+ margin: auto;
+  width: 30%;
+  padding: 10px; 
+  font-weight: bold;
+}
+.AdminPageButtons {
+ margin: auto;
+  width: 30%;
+  border: 3px solid yellow;
+  padding: 10px; 
+}

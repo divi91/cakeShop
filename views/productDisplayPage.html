@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1561.61">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/style/inventory.css">
+</head>
+<body onload="documentLoadFunction()">
+  <div id="mainDiv" class="mainDiv">
+    <div id="welcome" class="welcome">
+      <div id="userGuest" class="userguest">
+        <p id="pUserName"></p>
+      </div>
+        <div id="cartimageDiv" class="cartimagediv">
+        <button id="collapsebutton" type="button" class="btn btn-info" onclick="openNav()" data-toggle="collapse" data-target="#sidepanel">Checkout</button>
+          </div>
+          <div id="logoutbtndiv" class="logoutbtnClass">
+            <button id="btnLogout" style="display:none">Logout</button>
+            <button id="btnAdmin">Admin</button>
+          </div>
+    </div>
+    <img src="/images/siteImages/TopBanner.jpg" style="width:100%; height:20%"></img>
+  	<br>
+      <div id="cakeArea" class="cakeAreaFull">
+      </div>
+      <div id="sidepanel" class="collapse">
+          <a href="javascript:void(0)" style="color:Red" class="closebtn" onclick="closeNav()" data-toggle="collapse" data-target="#sidepanel">Close</a>
+          <div id="itemsAdded" style="width:100%">
+            <table id = "pagetable" class="OrderTableclass">
+            <tr style="font-weight: bold;">
+              <th>Cake</th>
+              <th>Quantity</th>
+              <th>Remove</th>
+            </tr>
+            </table>
+            <div id="customerForm" style="display:none">
+            <label for="customername">Name:</label>
+       <input id="customername" name="customernumber" type="text" value="Enter Name" onchange="updateValue(this)" style="width:60%;height:30px" autocomplete="on">
+      <br>
+              <label for="customernumber">Number:</label>
+       <input id="customernumber" name="customernumber" type="text" value="Enter Number" onchange="updateValue(this)" style="width:60%;height:30px" autocomplete="on">
+              <br>
+              <label for="customeremail">Email:</label>
+         <input id="customeremail" name="customeremail" type="text" value="Enter Email" onchange="updateValue(this)" style="width:60%;height:30px" autocomplete="on">
+              <br>
+              <button id="btncheckout" onclick="checkOut()">CheckOut</button>
+            </div>
+          </div>
+       </div>
+  </div>
+	<script type="text/javascript" src="/scripts/productDisplay.js"></script>
+</body>
+</html>

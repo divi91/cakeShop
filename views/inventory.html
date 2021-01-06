@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Inventory</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1561.61">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="/style/inventory.css">
+</head>
+<body onload="documentLoadFunction()">
+  <button id="btnLogout" style="visibility:hidden">Logout</button>
+	<div id="loginArea" class="loginArea">
+		<form id="inventoryLoginForm" action="/inventory" method="POST">
+      <label for="inventoryUserName">UserName</label>
+      <input id="inventoryUserName" name="username" type="text" style="width:60%;height:30px" autocomplete="on">
+      <br>
+      <label for="inventoryPassword">Password</label>
+      <input id="inventoryPassword" type="password" name="password" style="width:60%;height:30px" autocomplete="on">
+      <br>
+      <button id="btnInventoryLogin" type="submit">Login</button>
+    </form>
+	</div>
+<p id="inventoryp" class="inventoryClassp" style="visibility:hidden">Add new Cake</p>
+  <div id="inventoryManagementArea" class="inventoryClassDiv" style="visibility:hidden">
+    <form id="cakeUploadForm" action="/upload" method="POST" encType="multipart/form-data">
+      <input type="file" name="cakeFileUpload">
+      <input type="submit" name="" value="upload">
+    </form>
+  </div>
+  <br>
+  <div id="divAdminPageButtons" class = "AdminPageButtons" style="visibility:hidden">
+    <button id="btnOrders">Orders</button>
+    <button id="btnBrowse">Browse Cakes</button>
+  </div>
+<script type="text/javascript" src="/scripts/inventory.js"></script>
+</body>
+</html>
